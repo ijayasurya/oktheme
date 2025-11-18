@@ -241,4 +241,3 @@ require get_template_directory() . '/breadcrumbs.php';
 // require_once get_template_directory() . '/plugins/related-links.php';
 
 require_once get_template_directory() . '/plugins/fixeddate.php';
-require_once get_template_directory() . '/inc/update.php';
