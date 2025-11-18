@@ -1,0 +1,52 @@
+{
+    "packages": [
+        {
+            "name": "aristath/github-theme-updater",
+            "version": "v0.2",
+            "version_normalized": "0.2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/aristath/github-theme-updater.git",
+                "reference": "edc92b0d2ceca56195843f2feb663fec6d03d671"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/aristath/github-theme-updater/zipball/edc92b0d2ceca56195843f2feb663fec6d03d671",
+                "reference": "edc92b0d2ceca56195843f2feb663fec6d03d671",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6"
+            },
+            "time": "2023-12-22T11:10:16+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "aristath",
+                    "email": "aristath@gmail.com",
+                    "homepage": "https://aristath.github.io",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Custom updater class for WordPress themes hosted on Github",
+            "homepage": "https://aristath.github.io/github-theme-updater",
+            "keywords": [
+                "Theme Updater",
+                "github",
+                "wordpress"
+            ],
+            "support": {
+                "issues": "https://github.com/aristath/github-theme-updater/issues",
+                "source": "https://github.com/aristath/github-theme-updater/tree/v0.2"
+            },
+            "install-path": "../aristath/github-theme-updater"
+        }
+    ],
+    "dev": true,
+    "dev-package-names": []
+}

@@ -60,7 +60,7 @@ if (!defined('ABSPATH')) {
 
 
   
-<div class="sticky top-5 space-y-4">
+<div class="space-y-4">
 		<?php dynamic_sidebar('sidebar-1'); ?>
 	</div>
 </aside><!-- #secondary -->
