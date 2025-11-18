@@ -1,0 +1,243 @@
+/* ------------------------------------------------------------------
+   WORDPRESS BLOCK STYLING FOR TAILWIND + DAISYUI
+------------------------------------------------------------------ */
+
+@layer components {
+
+  /* ------------------------------
+     TYPOGRAPHY BLOCKS
+  ------------------------------ */
+
+  .wp-block-paragraph {
+    @apply mb-4 leading-relaxed;
+  }
+
+  .wp-block-heading {
+    @apply font-bold mb-4;
+  }
+
+  .wp-block-list {
+    @apply list-disc pl-5 mb-4;
+  }
+
+  .wp-block-quote {
+    @apply border-l-4 border-base-content/20 pl-4 italic mb-4;
+  }
+
+  .wp-block-code {
+    @apply bg-base-200 p-3 rounded-lg font-mono text-sm overflow-auto;
+  }
+
+  .wp-block-preformatted {
+    @apply bg-base-200 p-3 rounded-lg font-mono text-sm whitespace-pre-wrap;
+  }
+
+  .wp-block-pullquote {
+    @apply border-l-4 border-primary pl-5 italic text-lg my-6;
+  }
+
+  .wp-block-table {
+    @apply w-full border border-base-300 rounded-lg overflow-hidden;
+  }
+
+  .wp-block-table table,
+  .wp-block-table td,
+  .wp-block-table th {
+    @apply border border-base-300 p-3;
+  }
+
+
+  /* ------------------------------
+     MEDIA BLOCKS
+  ------------------------------ */
+
+  .wp-block-image img {
+    @apply rounded-lg w-full h-auto;
+  }
+
+  .wp-block-gallery {
+    @apply grid grid-cols-2 gap-4 my-4;
+  }
+
+  .wp-block-video video {
+    @apply w-full rounded-lg;
+  }
+
+  .wp-block-audio audio {
+    @apply w-full;
+  }
+
+  .wp-block-file {
+    @apply flex items-center gap-3 bg-base-200 p-3 rounded-lg;
+  }
+
+  .wp-block-cover {
+    @apply relative overflow-hidden rounded-xl flex items-center justify-center text-center;
+  }
+
+  .wp-block-cover-image {
+    @apply w-full rounded-xl overflow-hidden;
+  }
+
+  .wp-block-media-text {
+    @apply grid grid-cols-1 lg:grid-cols-2 gap-6 my-6 items-center;
+  }
+
+
+  /* ------------------------------
+     BUTTONS
+  ------------------------------ */
+
+  .wp-block-button a {
+    @apply btn btn-primary rounded-full;
+  }
+
+  .wp-block-buttons {
+    @apply flex flex-wrap gap-3 my-4;
+  }
+
+
+  /* ------------------------------
+     LAYOUT / DESIGN BLOCKS
+  ------------------------------ */
+
+  .wp-block-group {
+    @apply my-6;
+  }
+
+  .wp-block-separator {
+    @apply border-t border-base-300 my-6;
+  }
+
+  .wp-block-columns {
+    @apply grid grid-cols-1 md:grid-cols-2 gap-6 my-6;
+  }
+
+  .wp-block-column {
+    @apply w-full;
+  }
+
+  .wp-block-spacer {
+    @apply block w-full;
+  }
+
+
+  /* ------------------------------
+     THEME / POST BLOCKS
+  ------------------------------ */
+
+  .wp-block-post-title {
+    @apply text-3xl font-bold mb-4;
+  }
+
+  .wp-block-post-content {
+    @apply space-y-4 leading-relaxed;
+  }
+
+  .wp-block-post-excerpt {
+    @apply text-base opacity-80 mb-4;
+  }
+
+  .wp-block-post-featured-image img {
+    @apply rounded-xl w-full h-auto;
+  }
+
+  .wp-block-post-date {
+    @apply text-sm opacity-60;
+  }
+
+  .wp-block-post-author {
+    @apply text-sm opacity-70;
+  }
+
+
+  /* ------------------------------
+     QUERY LOOP / TEMPLATE
+  ------------------------------ */
+
+  .wp-block-query {
+    @apply grid gap-8;
+  }
+
+  .wp-block-post-template {
+    @apply grid gap-10;
+  }
+
+  .wp-block-query-pagination {
+    @apply flex justify-between items-center mt-8;
+  }
+
+
+  /* ------------------------------
+     WIDGET / SIDEBAR
+  ------------------------------ */
+
+  .wp-block-categories,
+  .wp-block-archives,
+  .wp-block-tag-cloud {
+    @apply bg-base-200 p-4 rounded-lg;
+  }
+
+  .wp-block-search {
+    @apply my-4;
+  }
+
+  .wp-block-search__input {
+    @apply input input-bordered w-full;
+  }
+
+  .wp-block-search__button {
+    @apply btn btn-primary;
+  }
+
+
+  /* ------------------------------
+     EMBEDS
+  ------------------------------ */
+
+  .wp-block-embed {
+    @apply w-full my-4 rounded-xl overflow-hidden;
+  }
+
+  .wp-block-embed iframe {
+    @apply w-full aspect-video rounded-xl;
+  }
+
+
+  /* ------------------------------
+     ALIGNMENT CLASSES
+  ------------------------------ */
+
+  .alignwide {
+    @apply max-w-5xl mx-auto;
+  }
+
+  .alignfull {
+    @apply w-full;
+  }
+
+  .alignleft {
+    @apply float-left mr-4 mb-4;
+  }
+
+  .alignright {
+    @apply float-right ml-4 mb-4;
+  }
+
+  .aligncenter {
+    @apply mx-auto text-center;
+  }
+
+
+  /* ------------------------------
+     COLOR HELPERS
+  ------------------------------ */
+
+  .has-background {
+    @apply p-4 rounded-lg;
+  }
+
+  .has-text-color {
+    @apply text-base-content;
+  }
+}
