@@ -18,7 +18,7 @@ if (!defined('ABSPATH')) {
 	</div><!-- #content -->
 
 
-<footer class="footer footer-horizontal footer-center bg-base-100 mt-10 text-base-content rounded p-10">
+<footer class="footer footer-horizontal footer-center bg-base-200 mt-10 text-base-content rounded p-10">
   
 <?php if (is_active_sidebar('footer-1') || is_active_sidebar('footer-2') || is_active_sidebar('footer-3')) : ?>
 			<div class="footer-widgets container-custom py-12 md:py-16">
