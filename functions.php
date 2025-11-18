@@ -241,3 +241,13 @@ require get_template_directory() . '/breadcrumbs.php';
 // require_once get_template_directory() . '/plugins/related-links.php';
 
 require_once get_template_directory() . '/plugins/fixeddate.php';
+
+require_once get_template_directory() . '/inc/Updater.php';
+
+new \Gridd\Updater([
+    'name' => 'oktheme', // must match the directory name of the theme
+    'slug' => 'oktheme', // same as above
+    'repo' => 'ijayasurya/oktheme', // your GitHub repo
+    'ver'  => wp_get_theme()->get('Version'),
+    'url'  => 'https://github.com/ijayasurya/oktheme',
+]);
