@@ -10,7 +10,7 @@ if (!defined('ABSPATH')) {
 }
 ?>
 <!DOCTYPE html>
-<html <?php language_attributes(); ?>  class="scroll-smooth">
+<html <?php language_attributes(); ?> data-theme="light" class="scroll-smooth">
 <head>
 	<meta charset="<?php bloginfo('charset'); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -93,7 +93,7 @@ if (!defined('ABSPATH')) {
     </label>
 </form>
 
-       <button class="btn btn-square btn-ghost" aria-label="Theme Changer" data-toggle-theme="night,light" data-act-class="ACTIVECLASS">
+       <button class="btn btn-square btn-ghost" aria-label="Theme Changer" data-toggle-theme="dark,light" data-act-class="ACTIVECLASS">
         
       <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path><path d="M12 3l0 18"></path><path d="M12 9l4.65 -4.65"></path><path d="M12 14.3l7.37 -7.37"></path><path d="M12 19.6l8.85 -8.85"></path></svg>
 
