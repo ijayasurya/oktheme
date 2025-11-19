@@ -42,14 +42,14 @@ if ( $paged > 1 ) {
   <div class="flex-1 ml-3 h-px line"></div>
 </div>
 
-<div class="space-y-6">
+<div class="">
 <?php while ( have_posts() ) : the_post(); ?>
 
     <article id="post-<?php the_ID(); ?>" 
-        class="flex flex-row gap-3 sm:gap-4 border-b bordernew pb-6">
+        class="flex flex-row p-2 border-b gap-3 sm:gap-4  place-items-center items-center bordernew ">
 
         <!-- Left: Image -->
-        <figure class="post-thumbnail flex-shrink-0 w-24 sm:w-32 md:w-40 lg:w-48 h-24 sm:h-28 md:h-32">
+        <figure class="post-thumbnail  flex-shrink-0 w-24 sm:w-32 md:w-40 lg:w-48 h-24 sm:h-28 md:h-32">
             <a aria-label="<?php the_title_attribute(); ?>" href="<?php the_permalink(); ?>">
                 <?php if ( has_post_thumbnail() ) : ?>
                     <?php the_post_thumbnail('medium', [
@@ -86,7 +86,9 @@ if ( $paged > 1 ) {
             ); ?>
 
             <p class="text-xs sm:text-sm opacity-70">
-                <?php echo get_the_modified_time( 'F j, Y' ); ?>
+               <time class="published" datetime="<?php echo get_the_date( 'c' ); ?>">
+    <?php echo get_the_date( 'F j, Y' ); ?>
+</time>
             </p>
         </div>
     </article>
