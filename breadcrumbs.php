@@ -9,14 +9,14 @@ function oktheme_breadcrumbs() {
     echo '<div class="breadcrumbs w-fit bg-base-200 px-3 py-1 rounded text-sm"><ul>';
 
     // Home Link
-    echo '<li><a class="link link-info no-underline" href="' . home_url() . '">Home</a></li>';
+    echo '<li><a class=" no-underline" href="' . home_url() . '">Home</a></li>';
 
     // Category or Custom Taxonomy
     if (is_single()) {
         $category = get_the_category();
         if (!empty($category)) {
             $cat_link = get_category_link($category[0]->term_id);
-            echo '<li><a class="link link-info no-underline" href="' . esc_url($cat_link) . '">' . esc_html($category[0]->name) . '</a></li>';
+            echo '<li><a class="link  no-underline" href="' . esc_url($cat_link) . '">' . esc_html($category[0]->name) . '</a></li>';
         }
         // Current Post Title
         echo '<li>' . get_the_title() . '</li>';

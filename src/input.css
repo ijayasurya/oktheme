@@ -16,10 +16,9 @@ Tags: blog, tailwindcss, responsive
 @import "tailwindcss-animated";
 
 @plugin "daisyui" {
-	   themes: corporate --default, night --prefersdark;
+	   themes: valentine --default;
 }
 
-@custom-variant dark (&:where([data-theme=night], [data-theme=night] *));
 
 @layer base {
 	:root {
@@ -83,7 +82,7 @@ body {
 }
 
 .prose a {
-	@apply link link-info no-underline;
+	@apply link underline-offset-3 decoration-1.5;
 }
 .prose .ez-toc-title {
 	@apply text-base-content;
