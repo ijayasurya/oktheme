@@ -49,14 +49,14 @@ add_action('after_setup_theme', 'oktheme_setup');
  */
 function oktheme_scripts() {
 
-	    // Main JS (compiled by your build tool)
-    wp_enqueue_script(
-        'oktheme-js',
-        get_template_directory_uri() . '/js/script.js', // or build/script.js
-        array(),
-        filemtime(get_template_directory() . '/js/script.js'),
-        true
-    );
+	//     // Main JS (compiled by your build tool)
+    // wp_enqueue_script(
+    //     'oktheme-js',
+    //     get_template_directory_uri() . '/js/script.js', // or build/script.js
+    //     array(),
+    //     filemtime(get_template_directory() . '/js/script.js'),
+    //     true
+    // );
 
 
 	// Enqueue main stylesheet
@@ -64,7 +64,7 @@ function oktheme_scripts() {
 	wp_enqueue_style('oktheme-tailwind', get_template_directory_uri() . '/assets/tailwind.css', [], filemtime(get_template_directory() . '/assets/tailwind.css'));
 
 	// Enqueue navigation script
-	wp_enqueue_script('oktheme-navigation', get_template_directory_uri() . '/js/navigation.js', array(), wp_get_theme()->get('Version'), true);
+	// wp_enqueue_script('oktheme-navigation', get_template_directory_uri() . '/js/navigation.js', array(), wp_get_theme()->get('Version'), true);
 	
 	// Enqueue comment reply script
 	if (is_singular() && comments_open() && get_option('thread_comments')) {

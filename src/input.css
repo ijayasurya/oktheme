@@ -16,7 +16,7 @@ Tags: blog, tailwindcss, responsive
 @import "tailwindcss-animated";
 
 @plugin "daisyui" {
-   themes: light --default, dark --prefersdark;
+   themes: lofi --default;
 }
 @custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
 
